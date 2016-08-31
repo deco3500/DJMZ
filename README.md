@@ -7,22 +7,21 @@ DJMZ will be creating a mobile compatible web application to deliver local news 
 The main target audience will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology. The uniqueness of the application is a fusion between user-submitted content and geographically tagged news content.
 
 # Team:
-- [Debbie Sanchez]
-Team Leader, Back-end Development
-4329569 - DECO7350
+### Debbie Sanchez | 4329569 - DECO7350
+    * (Team Leader, Back-end Development)
 In charge of team deliverables submission and sets agenda for group meetings. Will set up the development environment for the team and assist in member issues. Represents the team when communicating with tutors/lecturer. Secondary back-end developer specializing on the spatial functions in the project.
 
-- [Miral Patel]
-Front-end Development, Documentation, Time Keeper
-43978281 - DECO7350
+### Miral Patel | 43978281 - DECO7350
+    * (Front-end Development, Documentation, Time Keeper)
+
 Keeps track of team deliverable due dates and follows up with individual tasks assigned to each member. 
 
-- [Jin Shin]
-Back-end Development, Back-end Testing, Content generation
-43401248 - DECO3500
+### Jin Shin | 43401248 - DECO3500
+    * (Back-end Development, Back-end Testing, Content generation)
 
-- [Zainab Alnaboud] Front-end Development, Design, Front-end testing
-43131394 - DECO3500
+
+### Zainab Alnaboud | 43131394 - DECO3500
+    * (Front-end Development, Design, Front-end testing)
 
 # Communications:
 Github -  File sharing, group submissions, code sharing
