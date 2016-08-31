@@ -15,7 +15,7 @@ In charge of team deliverables submission and sets agenda for group meetings. Wi
 43978281 - DECO7350
 Keeps track of team deliverable due dates and follows up with individual tasks assigned to each member. 
 
-- ]Shin Jin] (Back-end Development, Back-end Testing, Content generation)
+- [Shin Jin] (Back-end Development, Back-end Testing, Content generation)
 43401248 - DECO3500
 
 - [Zainab Alnaboud] (Front-end Development, Design, Front-end testing)
