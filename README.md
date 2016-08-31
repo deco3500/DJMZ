@@ -8,7 +8,7 @@ The main target audience will be for young people (30 years of age and below) th
 
 # Team:
 | Names          | Student Number |        responsibilities           |
-| --------------- |:--------------:| ---------------------------------:|
+| :---------------: |:--------------:| :---------------------------------:|
 | Debbie Sanchez  | 4329569        | Team Leader, Back-end Development |
 | Miral Patel     | 43978281       | Front-end Development, Documentation, Time Keeper |
 | Jin Shin        | 43401248       | Back-end Development, Back-end Testing, Content generation |
