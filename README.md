@@ -7,7 +7,7 @@ DJMZ will be creating a mobile compatible web application to deliver local news 
 The main target audience will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology. The uniqueness of the application is a fusion between user-submitted content and geographically tagged news content.
 
 # Team:
-| Names          | Student Number |        responsibilities           |
+| Names          | Student Number |        Responsibilities           |
 | :---------------: |:--------------:| :---------------------------------:|
 | Debbie Sanchez  | 4329569        | Team Leader, Back-end Development |
 | Miral Patel     | 43978281       | Front-end Development, Documentation, Time Keeper |
