@@ -7,21 +7,15 @@ DJMZ will be creating a mobile compatible web application to deliver local news 
 The main target audience will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology. The uniqueness of the application is a fusion between user-submitted content and geographically tagged news content.
 
 # Team:
-### Debbie Sanchez | 4329569 - DECO7350
-    * (Team Leader, Back-end Development)
-In charge of team deliverables submission and sets agenda for group meetings. Will set up the development environment for the team and assist in member issues. Represents the team when communicating with tutors/lecturer. Secondary back-end developer specializing on the spatial functions in the project.
+| Names          | Student Number |        responsibilities           |
+| --------------- |:--------------:| ---------------------------------:|
+| Debbie Sanchez  | 4329569        | Team Leader, Back-end Development |
+| Miral Patel     | 43978281       | Front-end Development, Documentation, Time Keeper |
+| Jin Shin        | 43401248       | Back-end Development, Back-end Testing, Content generation |
+| Zainab Alnaboud | 43131394       | Front-end Development, Design, Front-end testing |
 
-### Miral Patel | 43978281 - DECO7350
-    * (Front-end Development, Documentation, Time Keeper)
-
-Keeps track of team deliverable due dates and follows up with individual tasks assigned to each member. 
-
-### Jin Shin | 43401248 - DECO3500
-    * (Back-end Development, Back-end Testing, Content generation)
-
-
-### Zainab Alnaboud | 43131394 - DECO3500
-    * (Front-end Development, Design, Front-end testing)
+- Debbie will be in charge of team deliverables submission and sets agenda for group meetings. Will set up the development environment for the team and assist in member issues. Represents the team when communicating with tutors/lecturer. Secondary back-end developer specializing on the spatial functions in the project.
+- Miral will keep track of team deliverable due dates and follows up with individual tasks assigned to each member. 
 
 # Communications:
 Github -  File sharing, group submissions, code sharing
