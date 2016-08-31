@@ -18,19 +18,19 @@ The main target audience will be for young people (30 years of age and below) th
 - Miral will keep track of team deliverable due dates and follows up with individual tasks assigned to each member. 
 
 # Communications:
-Github -  File sharing, group submissions, code sharing
-FB Group - Group announcements, discussions, task reminders
-Workshops - Decision voting, In-person discussions, presentations
-Google Drive - Document collaboration
+- Github -  File sharing, group submissions, code sharing
+- FB Group - Group announcements, discussions, task reminders
+- Workshops - Decision voting, In-person discussions, presentations
+- Google Drive - Document collaboration
 
 # Decision making:
 The group will make decisions as a majority vote. In the case of consistent equal votes, by chance of randomness, a member of the group will have to forfeit their vote.
 
 # Poor communication / contribution:
-In the case of poor communication or contributions, our group will have a 3 strikes system. Should a group member:
-Not communicate of their status of work/attendance on consecutive separate days
-Not deliver tasks on time without valid reasons (unexpected bugs/glitches/problems)
-The subject matter will be raised to tutors/lecturers with substantial evidence of effort to contact/reach/obtain contribution.
+#### In the case of poor communication or contributions, our group will have a 3 strikes system. Should a group member:
+- Not communicate of their status of work/attendance on consecutive separate days
+- Not deliver tasks on time without valid reasons (unexpected bugs/glitches/problems)
+- The subject matter will be raised to tutors/lecturers with substantial evidence of effort to contact/reach/obtain contribution.
 
 # Plan:
 - Project phases
