@@ -34,19 +34,16 @@ The group will make decisions as a majority vote. In the case of consistent equa
 - The subject matter will be raised to tutors/lecturers with substantial evidence of effort to contact/reach/obtain contribution.
 
 # Plan:
-- Project phases
-- Proposal
-- Design user interface	
-- Database design
-- Back-end
+**Project phases**: 
+The project phases are divided into four main steps, Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
 
-# Deliverables:
+**Deliverables**:
 - Project Documentation
 - User Interface Design
 - Database
 - Web services
 
-# Resources:
+**Resources**:
 - Bootstrap framework
 - Google maps API
 - Photoshop
