@@ -27,6 +27,8 @@
 - **FB Group** - Group announcements, discussions, task reminders
 - **Workshops** - Decision voting, In-person discussions, presentations
 - **Google Drive** - Document collaboration
+- **Email** - For formal communication
+- **Phone/SMS** - For emergencies
 
 # Decision making:
 The group will make decisions as a majority vote. In the case of consistent equal votes, by chance of randomness, a member of the group will have to forfeit their vote.
