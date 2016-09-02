@@ -4,11 +4,11 @@
 **DJMZ** will be creating a mobile compatible web application to deliver local news within a user’s vicinity using a visual map. It will covering both formal and informal news. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events. 
 
 # Concept:
- This application will be covering some common categories: local events (will cover all the general news), food (covers all food realted news such as supermarket discount, new restaurant opening and so on), crime(will be cover all crime related news), transportation (will be covering news related to traffic, buses, trains and so on).
+ Users can click picture or video and upload it by using GPS of their mobile and post realted news content which can be visualize by other users as a tag on geographical map. This application will be covering some common categories: local events (will cover all the general news), food (covers all food realted news such as supermarket discount, new restaurant opening and so on), crime(will be cover all crime related news), transportation (will be covering news related to traffic, buses, trains and so on).
  
  The main target audience will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology.
  
- The uniqueness of the application is that it is a fusion between user-submitted content and geographically tagged news content.
+ The uniqueness of the application is that it is a fusion between user-submitted content and geographically tagged news content. It is a platform where user can do both upload and read the news content at the same time.
 
 # Team:
 | Names          | Student Number |        Responsibilities           |
