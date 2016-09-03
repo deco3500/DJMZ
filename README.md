@@ -6,7 +6,7 @@
 ## Concept:
  Users can click picture or video and upload it by using GPS of their mobile and post realted news content which can be visualize by other users as a tag on geographical map. This application will be covering some common categories: local events (will cover all the general news), food (covers all food realted news such as supermarket discount, new restaurant opening and so on), crime(will be cover all crime related news), transportation (will be covering news related to traffic, buses, trains and so on).
  
- The main target audience will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology.
+ The main **target audience** will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology.
  
  The uniqueness of the application is that it is a fusion between user-submitted content and geographically tagged news content. It is a platform where user can do both upload and read the news content at the same time.
 
@@ -40,16 +40,18 @@ The group will make decisions as a majority vote. In the case of consistent equa
 - The subject matter will be raised to tutors/lecturers with substantial evidence of effort to contact/reach/obtain contribution.
 
 ## Project Plan:
-### Standup Milestones
+
+### Project phases: 
+
+#### Standup Milestones
 
 | When?        | What?          |
 | ------------- |:-------------:|
-| Week 8      | Week 8  standup |
-| Week 10      | Week 10  standup      |
-| Week 12 | Week 12  standup      |
+| Week 8      | prototype/structure the app's skelton using HTML/CSS  |
+| Week 10      | -      |
+| Week 12 | -      |
 
-### Project phases: 
-The project phases are divided into four main steps, Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
+The project phases are divided into four main steps: Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
 
 ### Deliverables:
 - Project Documentation
@@ -65,7 +67,7 @@ The project phases are divided into four main steps, Proposal, Design, Feature-b
 
 ## Tags:
 ### Social/Mobile
-##### #mobile #web #application #awarness
+##### #mobile #web_application #awarness
 
 ### Journalism/News
-
+##### #local_news #resident
