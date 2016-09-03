@@ -1,16 +1,16 @@
 # DJMZ
 
-# Introduction:
+## Introduction:
 **DJMZ** will be creating a mobile compatible web application to deliver local news within a user’s vicinity using a visual map. It will covering both formal and informal news. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events. 
 
-# Concept:
+## Concept:
  Users can click picture or video and upload it by using GPS of their mobile and post realted news content which can be visualize by other users as a tag on geographical map. This application will be covering some common categories: local events (will cover all the general news), food (covers all food realted news such as supermarket discount, new restaurant opening and so on), crime(will be cover all crime related news), transportation (will be covering news related to traffic, buses, trains and so on).
  
  The main target audience will be for young people (30 years of age and below) that have grown accustomed to smartphone and GPS technology.
  
  The uniqueness of the application is that it is a fusion between user-submitted content and geographically tagged news content. It is a platform where user can do both upload and read the news content at the same time.
 
-# Team:
+## Team:
 | Names             | Student Number |        Roles                                               |
 | :---------------: |:--------------:| :---------------------------------------------------------|
 | Debbie Sanchez    | 43295269       | Team Leader, Back-end Development                          |
@@ -22,7 +22,7 @@
 | Zainab Alnaboud   | 43131394       | Front-end Development, Design, Front-end testing           |
 |                   |                | **Zainab** will be in charge on: user testing, creating paper & electronic prototype, and developing the interactivity & design for the application |
 
-# Communications:
+## Communications:
 - **Github** -  File sharing, group submissions, code sharing
 - **FB Group** - Group announcements, discussions, task reminders
 - **Workshops** - Decision voting, In-person discussions, presentations
@@ -30,41 +30,42 @@
 - **Email** - For formal communication
 - **Phone/SMS** - For emergencies
 
-# Decision making:
+## Decision making:
 The group will make decisions as a majority vote. In the case of consistent equal votes, by chance of randomness, a member of the group will have to forfeit their vote.
 
-# Poor communication / contribution:
-#### In the case of poor communication or contributions, our group will have a **3 strikes system**. Should a group member:
+## Poor communication / contribution:
+**In the case of poor communication or contributions, our group will have a 3 strikes system. Should a group member:**
 - Not communicate of their status of work/attendance on consecutive separate days
 - Not deliver tasks on time without valid reasons (unexpected bugs/glitches/problems)
 - The subject matter will be raised to tutors/lecturers with substantial evidence of effort to contact/reach/obtain contribution.
 
-# Project Plan:
-**Standup Milestones**
-| When?             | What?           | 
-| :---------------: |:---------------:|
-| Week 8            |          -       | 
-| Week 10           |          -       |
-| Week 12           |          -       |
+## Project Plan:
+### Standup Milestones
 
-**Project phases**: 
+| When?        | What?          |
+| ------------- |:-------------:|
+| Week 8      | Week 8  standup |
+| Week 10      | Week 10  standup      |
+| Week 12 | Week 12  standup      |
+
+### Project phases: 
 The project phases are divided into four main steps, Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
 
-**Deliverables**:
+### Deliverables:
 - Project Documentation
 - User Interface Design
 - Database
 - Web services
 
-**Resources**:
+### Resources:
 - Bootstrap framework
 - Google maps API
 - Photoshop
 - php
 
-# Tags:
-### Social/Mobile ###
-##### #mobile #web #application #awarness #####
+## Tags:
+### Social/Mobile
+##### #mobile #web #application #awarness
 
-### Journalism/News ###
+### Journalism/News
 
