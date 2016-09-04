@@ -57,7 +57,9 @@ Phases are divided into four main steps: Proposal, Design, Feature-based Prototy
 #### Deliverables:
 Each phase will have specific deliverables to be demonstrated in order for us or others to assess the milestone. Proposal phase will result a proposal of our project. This will set the basis of the project and give us the chance to outline what the project is going to be. The design phase will produce a number of different designs for the UI of the application and a series of questions for the user-testing. During the phase, the overall colour scheme will be decided and the UI will be tested for the best user experience. Feature-based prototype phase will create a number of prototypes depending on the number of unique features in the application and a series of questions for the user-testing. Each feature will be thoroughly tested and improved according to the feedback. Final deliverable for the project is overall prototype and user-testing questions. Here will have the final version of the project where all the features are combined. The final project will not be the final product but near there. 
 
-### Resources:
+#### Resources:
+There will be a number of resources that are being used to implement the application. For the quick and easier layout of the applcation, the team will utilize Bootstrap CSS framework. Also for any image/icon creation or editing will be done in Photoshop. Since the application will have a map and map pins to represent the user submitted events, the team has decided to use Google Maps API for its well-documented resources. Each team member will use their own computer for the project and code/files are shared through Google Drive and Github. Lastly, we also need people for the user testing for each phases. 
+
 - Bootstrap framework
 - Google maps API
 - Photoshop
