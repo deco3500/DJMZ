@@ -60,11 +60,6 @@ Each phase will have specific deliverables to be demonstrated in order for us or
 #### Resources:
 There will be a number of resources that are being used to implement the application. For the quick and easier layout of the applcation, the team will utilize Bootstrap CSS framework. Also for any image/icon creation or editing will be done in Photoshop. Since the application will have a map and map pins to represent the user submitted events, the team has decided to use Google Maps API for its well-documented resources. Each team member will use their own computer for the project and code/files are shared through Google Drive and Github. Lastly, we also need people for the user testing for each phases. 
 
-- Bootstrap framework
-- Google maps API
-- Photoshop
-- php
-
 ## Tags:
 ### Social/Mobile
 ##### #mobile #web_application #awarness
