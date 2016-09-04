@@ -47,9 +47,9 @@ The group will make decisions as a majority vote. In the case of consistent equa
 
 | When?        | What?          |
 | ------------- |:-------------:|
-| Week 8      | prototype/structure the app's skelton using HTML/CSS  |
-| Week 10      | -      |
-| Week 12 | -      |
+| Week 8      | The overall design of the app's skelton using Photoshop and HTML/CSS  |
+| Week 10     | The prototypes of different features in the app using HTML/CSS/JavaScript and PHP    |
+| Week 12 |  The Final product/prototype of all features combined     |
 
 #### The project phases 
 Phases are divided into four main steps: Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
