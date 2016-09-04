@@ -51,13 +51,11 @@ The group will make decisions as a majority vote. In the case of consistent equa
 | Week 10      | -      |
 | Week 12 | -      |
 
-The project phases are divided into four main steps: Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
+#### The project phases 
+Phases are divided into four main steps: Proposal, Design, Feature-based Prototype, Overall Prototype. The proposal phase is where the direction of the project is decided. While this phase it is important to do a background research of the problem space and apply the initial feedback. The design of the web application is the most crucial first step of the project as the better design would speed up the front-end workload. The next phase is feature-based prototype meaning the app would be broken down into major features and will be developed individually. During this phase it is required to have one set of code guide to avoid unnecessary clashes of features developed by different developers. The final stage is to put together all the individual features into one whole prototype. This step would require a greater care as many things would definitely break and causes unintentional bugs. 
 
-### Deliverables:
-- Project Documentation
-- User Interface Design
-- Database
-- Web services
+#### Deliverables:
+Each phase will have specific deliverables to be demonstrated in order for us or others to assess the milestone. Proposal phase will result a proposal of our project. This will set the basis of the project and give us the chance to outline what the project is going to be. The design phase will produce a number of different designs for the UI of the application and a series of questions for the user-testing. During the phase, the overall colour scheme will be decided and the UI will be tested for the best user experience. Feature-based prototype phase will create a number of prototypes depending on the number of unique features in the application and a series of questions for the user-testing. Each feature will be thoroughly tested and improved according to the feedback. Final deliverable for the project is overall prototype and user-testing questions. Here will have the final version of the project where all the features are combined. The final project will not be the final product but near there. 
 
 ### Resources:
 - Bootstrap framework
