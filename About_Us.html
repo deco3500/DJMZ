@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>About Us</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="src/css/styles.css">
@@ -9,20 +10,20 @@
 
   <body>
     <div id="main">
-      <nav id="main-nav">
+      <nav class="main-nav">
         <ul>
-          <li><a href="#main_menu">Main Menu</a>
-            <ul>
-              <li><a href="index.html" >Home</a></li>
+          <li onclick="openNav()"><a>&#9776; Main Menu</a>
+            <ul id="side-main-menu" class="main-menu">
+              <li><a class="close-nav" onclick="closeNav()" href="index.html" >Home</a></li>
+              <li><a href="#">Sign in / Sign up</a></li>
               <li><a href="About_Us.html" >About Us</a></li>
               <li><a href="Contact_Us.html" >Contact Us</a></li>
               <li><a href="Terms_of_Use.html" >Terms of Use</a></li>
               <li><a href="Privacy_Policy.html" >Privacy Policy</a></li>
             </ul>
           </li>
-
-          <li><a href="#search">Search</a></li>
-          <li><a href="#profile">Profile</a></li>
+          <li><a href="#search">&#9776; Search</a></li>
+          <li><a href="#profile">&#9776; Profile</a></li>
         </ul>
       </nav>
 
@@ -30,5 +31,18 @@
     </div>
 
     <script src="src/js/index.js"></script>
+    <script>
+    function openNav() {
+        document.getElementById("side-main-menu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("side-main-menu").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+    </script>
   </body>
 </html>
