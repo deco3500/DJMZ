@@ -28,7 +28,17 @@
         </ul>
       </nav>
 
-      <div id="map-canvas"></div>
+      <div id="map-container">
+        <div id="map-canvas"></div>
+        <div id="map-location-permission">
+          <button type="button" class="btn" id="gps-btn">Use GPS</button>
+          <p class="or"> or </p>
+          <div class="map-location-permission-input">
+            <input type="text" />
+            <button type="button" class="btn btn-inline">Search</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="src/js/index.js"></script>
