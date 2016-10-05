@@ -7,6 +7,10 @@ body {
     transition: background-color 2s ease;
 }
 
+#content-canvas{
+  margin: 1cm;
+}
+
 /** Main menu**/
 .main-nav ul{
   list-style-type: none;
