@@ -98,7 +98,7 @@ body {
 }
 
 #map-canvas {
-  height: 70vh;
+  height: 80vh;
 }
 
 #map-location-permission {
@@ -142,6 +142,16 @@ body {
   width: 50%;
 }
 
+.post-icon {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.post-icon:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
   .main-menu {padding-top: 15px;}
   .main-menu a {font-size: 18px;}
@@ -163,25 +173,32 @@ body {
   }
 
   .btn {
-    width: 110px;
+    width: 200px;
     height: 30px;
   }
   .map-location-permission-input {
     display: flex;
     display: -webkit-flex;
 
-    flex-direction: column;
-    -webkit-flex-direction: column;
-
     -webkit-align-items: center;
     align-items: center;
   }
 
+  .map-location-permission-input .btn {
+    width: 70px;
+  }
+
   .map-location-permission-input input {
     width: 100px;
+    margin-right: 10px;
   }
 
   .or {
     margin: 5px;
+  }
+
+  .post-icon {
+    width: 50px;
+    height: 50px;
   }
 }
