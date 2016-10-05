@@ -40,6 +40,12 @@ body {
   overflow-x: hidden;
   transition: left 1s ease;
   padding-top: 60px;
+
+  display: flex;
+  display: -webkit-flex;
+
+  flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 .main-menu a {
@@ -72,6 +78,7 @@ body {
   text-align: right;
   padding-right: 10px;
   padding-top: 10px;
+  margin: 0;
 }
 
 .exit-nav:hover {
