@@ -13,9 +13,10 @@
     <div id="main">
       <nav class="main-nav">
         <ul>
-          <li onclick="openNav()"><a>&#9776; Main Menu</a>
+          <li><a class="menu-link">&#9776; Main Menu</a>
             <ul id="side-main-menu" class="main-menu">
-              <li><a href="index.html" >Home</a></li>
+              <span class="exit-nav">X</span>
+              <li class="side-menu-home"><a href="index.html" >Home</a></li>
               <li><a href="registration.html">Sign in / Sign up</a></li>
               <li><a href="About_Us.html" >About Us</a></li>
               <li><a href="Contact_Us.html" >Contact Us</a></li>
@@ -53,26 +54,16 @@
             <ul>
               <li><a href="profile.html">Profile</a></li>
               <li><a href="notifications.html">Notifications</a></li>
-              <li><a href="friends.html">Friends</a></li>
+              <li><a href="friends_page.html">Friends</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="src/js/index.js"></script>
-    <script>
-    function openNav() {
-        document.getElementById("side-main-menu").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-
-    function closeNav() {
-        document.getElementById("side-main-menu").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-        document.body.style.backgroundColor = "white";
-    }
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap"
+    async defer></script>
   </body>
 </html>
