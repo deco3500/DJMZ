@@ -1,8 +1,10 @@
-
+html, body {
+  padding: 0; margin: 0;
+}
 
 body {
     font-family: "Lato", sans-serif;
-    transition: background-color .5s;
+    transition: background-color 2s ease;
 }
 
 /** Main menu**/
@@ -29,14 +31,14 @@ body {
 
 .main-menu {
   height: 100%;
-  width: 0;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -1000px;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: left 1s ease;
   padding-top: 60px;
 }
 
@@ -57,6 +59,33 @@ body {
     top: 0;
     font-size: 36px;
 }
+
+.menu-link:hover {
+  cursor: pointer;
+}
+
+.exit-nav {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  width: 90%;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.exit-nav:hover {
+  cursor: pointer;
+}
+
+.side-menu-home {
+  margin-top: 50px;
+}
+
+#map-canvas {
+  height: 70vh;
+}
+
 
 @media screen and (max-height: 450px) {
   .main-menu {padding-top: 15px;}
