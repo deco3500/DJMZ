@@ -100,7 +100,7 @@ body {
 #map-location-permission {
   width: 100%;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   right: 30px;
 
   display: flex;
@@ -138,7 +138,46 @@ body {
   width: 50%;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 480px) {
   .main-menu {padding-top: 15px;}
   .main-menu a {font-size: 18px;}
+
+  #map-location-permission {
+    right: 0px;
+
+    display: flex;
+    display: -webkit-flex;
+
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+    justify-content: center;
+    -webkit-justify-content: center;
+
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 110px;
+    height: 30px;
+  }
+  .map-location-permission-input {
+    display: flex;
+    display: -webkit-flex;
+
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .map-location-permission-input input {
+    width: 100px;
+  }
+
+  .or {
+    margin: 5px;
+  }
 }
