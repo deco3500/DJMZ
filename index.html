@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Local News</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Local News</title>
 
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="src/dist/css/home.css">
   </head>
-
   <body>
-    <div id="main">
-      <nav class="main-nav">
-        <ul>
-          <li><a class="menu-link">&#9776; Main Menu</a>
-            <ul id="side-main-menu" class="main-menu">
-              <p class="exit-nav">X</p>
-              <li class="side-menu-home"><a href="index.html" >Home</a></li>
-              <li><a href="registration.html">Sign in / Sign up</a></li>
-              <li><a href="About_Us.html" >About Us</a></li>
-              <li><a href="Contact_Us.html" >Contact Us</a></li>
-              <li><a href="Terms_of_Use.html" >Terms of Use</a></li>
-              <li><a href="Privacy_Policy.html" >Privacy Policy</a></li>
-            </ul>
-          </li>
-          <li style="float:right"><a href="profile.html">&#9776; Profile</a></li>
-          <li style="float:right"><a href="#">&#9776; Search</a></li>
-        </ul>
-      </nav>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="main-nav">
+        <a class="navbar-brand" href="#">Our Web App Name</a>
 
-      <div id="map-container">
-        <div id="map-canvas"></div>
-        <div id="map-location-permission">
-          <button type="button" class="btn" id="gps-btn">Use GPS</button>
-          <p class="or"> or </p>
-          <div class="map-location-permission-input">
-            <input type="text" />
-            <button type="button" class="btn btn-inline">Search</button>
-          </div>
+        <ul class="nav navbar-nav pull-sm-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div id="map-container">
+      <div id="map-canvas"></div>
+      <div id="map-location-permission">
+        <button type="button" class="btn" id="gps-btn">Use GPS</button>
+        <p class="or"> or </p>
+        <div class="map-location-permission-input">
+          <input type="text" />
+          <button type="button" class="btn btn-inline">Search</button>
         </div>
       </div>
     </div>
 
-    <div class="container footer">
-      <img src="images/post.png" class="post-icon" />
-    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="src/js/index.js"></script>
+        <div class="row">
+          <div class="col-md-4">
+            <a class="footer-link" href="contact_us.html">Contact Us</a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="footer-link" href="terms.html">Terms of Use</a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="footer-link" href="privacy.html">Privacy Policy</a>
+          </div>
+        </div><!--End of row -->
+      </div> <!-- End of container -->
+    </footer>
+
+    <script src="assets/jQuery/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="src/dist/js/mapControl.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap"
     async defer></script>
   </body>

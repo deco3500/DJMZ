@@ -1,33 +1,21 @@
 $(document).ready(function() {
-
-  //close side menu
-  $(".exit-nav").on("click", function() {
-    $('#side-main-menu').css("left", "-1000px")
-  })
-
-  //open side menu
-  $('.menu-link').on("click", function() {
-    $('#side-main-menu').css("left", "0px")
-  })
-
-  //when "use GPS" button is clicked, get their location
-  $('#gps-btn').on("click", function() {
+  $('#gps-btn').on("click", () => {
     getLocation()
   })
 })
 
-//intialize the device's and call setPosition
+/**
+  * Initialize the device's GPS if present, then call setPosition
+  */
 function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(setPosition)
-  } else {
-    alert("Geolocation is not supported by this browser")
-  }
+  if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(setPosition) }
+  else { alert("Geolocation is not supported by this browser") }
 }
 
-//construct the map markers
+/**
+  * Construct the map markers
+  */
 function setPosition(position) {
-  userLocationRequire = false
   let lat = position.coords.latitude
   let lng = position.coords.longitude
 
@@ -38,13 +26,13 @@ function setPosition(position) {
   let customMarker4 = new google.maps.LatLng(lat - 0.00019, lng - 0.0010)
 
   let mapOptions = {
-    zoom: 18,
-    center: userLatLng
+  zoom: 18,
+  center: userLatLng
   }
 
   let map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
 
-  let currentLocation = new google.maps.Marker({
+  let userCurrentLocation = new google.maps.Marker({
     position: userLatLng,
     title: "Current Location",
     animation: google.maps.Animation.DROP,

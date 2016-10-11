@@ -1,0 +1,54 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 543px) {
+  #main-nav {
+    text-align: center;
+  }
+  .navbar-brand {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 25px;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: pink;
+  height: 200px;
+}
+
+footer .container {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container .row {
+  height: 50%;
+  width: 100%;
+}
+
+footer .container .row .col-md-4 {
+  text-align: center;
+}
+
+#map-container {
+  position: relative;
+}
+
+#map-canvas {
+  height: 80vh;
+}
