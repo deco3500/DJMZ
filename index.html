@@ -1,42 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Local News</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Local News</title>
 
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/dist/css/main.css">
   </head>
-
   <body>
-    <div id="main">
-      <nav class="main-nav">
-        <ul>
-          <li><a class="menu-link">&#9776; Main Menu</a>
-            <ul id="side-main-menu" class="main-menu">
-              <p class="exit-nav">X</p>
-              <li class="side-menu-home"><a href="index.html" >Home</a></li>
-              <li><a href="registration.html">Sign in / Sign up</a></li>
-              <li><a href="About_Us.html" >About Us</a></li>
-              <li><a href="Contact_Us.html" >Contact Us</a></li>
-              <li><a href="Terms_of_Use.html" >Terms of Use</a></li>
-              <li><a href="Privacy_Policy.html" >Privacy Policy</a></li>
-            </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-inverse">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="main-nav">
+        <a class="navbar-brand" href="#">Our Web App Name</a>
+
+        <ul class="nav navbar-nav pull-sm-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li style="float:right"><a href="profile.html">&#9776; Profile</a></li>
-          <li style="float:right"><a href="#">&#9776; Search</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>
+Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i>
+</a>
+          </li>
         </ul>
-      </nav>
 
-      <div id="map-canvas"></div>
+      </div>
+    </nav>
+
+    <div id="map-gps">
+      <form class="form-inline">
+        <div class="form-group">
+          <button type="button" class="btn btn-outline-primary" id="gps-btn">Use GPS</button>
+        </div>
+
+        <div class="form-group">
+          <p>or</p>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="search-location" placeholder="Search..." />
+        </div>
+        <button type="button" class="btn btn-primary" id="custom-gps-btn">Go!</button>
+      </form>
     </div>
 
-    <div class="container footer">
+    <!-- Google Map placeholder -->
+    <div id="map-canvas"></div>
+
+    <nav class="navbar navbar-light bg-faded" id="footer">
+      <div class="col-md-4">
+        <a class="footer-link" href="contact_us.html">Contact Us</a>
+      </div>
+
+      <div class="col-md-4">
+        <a class="footer-link" href="terms.html">Terms of Use</a>
+      </div>
+
+      <div class="col-md-4">
+        <a class="footer-link" href="privacy.html">Privacy Policy</a>
+      </div>
+    </nav>
+
+    <div id="event-info">
+      <div class="event-info-contents">
+        <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
+        
+        <h1 class="event-name"></h1>
+
+        <div class="event-info-images">
+          <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
+        </div>
+
+        <div class="event-info-description">
+          <p class="event-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="event-info-interactions">
+          <!-- LIKE button, SHARE button, comments -->
+          <div class="button-group">
+            <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="src/js/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap"
+    <script src="assets/jQuery/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="src/dist/js/mapControl.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap&libraries=places"
     async defer></script>
   </body>
 </html>

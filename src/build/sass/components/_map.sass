@@ -1,0 +1,35 @@
+#map-canvas
+  flex: 1
+
+
+//map GPS section
+#map-gps
+  width: 100%
+  display: flex
+  justify-content: center
+  margin: 10px
+
+  .form-inline
+    .form-group
+      margin-left: 5px
+      margin-right: 5px
+
+      p
+        font-size: 1.2em
+        color: grey
+
+@media (max-width: 544px)
+  #map-gps
+    margin: 0
+    .form-inline
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+
+      .form-group
+        height: 100%
+        display: flex
+        align-items: center
+        margin: 5px
