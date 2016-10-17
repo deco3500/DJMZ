@@ -54,6 +54,19 @@ body {
   border-radius: 0;
 }
 
+#notification {
+  position: relative;
+}
+
+.badge {
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: -30%;
+}
+
 @media (max-width: 543px) {
   #main-nav {
     text-align: center;
@@ -62,6 +75,9 @@ body {
     width: 100%;
     border-bottom: 1px solid grey;
     margin-bottom: 25px;
+  }
+  #notification {
+    display: none;
   }
 }
 

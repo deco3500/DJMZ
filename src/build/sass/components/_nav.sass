@@ -1,6 +1,17 @@
 .navbar
   border-radius: 0
 
+#notification
+  position: relative
+
+.badge
+  width: auto
+  height: auto
+  margin: 0
+  position: absolute
+  top: 0
+  right: -30%
+
 @media (max-width: 543px)
 
   #main-nav
@@ -10,3 +21,6 @@
     width: 100% //fixing overlap with Home link when in navbar is toggle mode
     border-bottom: 1px solid grey
     margin-bottom: 25px
+
+  #notification
+    display: none
