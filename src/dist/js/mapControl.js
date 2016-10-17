@@ -1,43 +1,50 @@
-$(document).ready(function() {
-  //when GPS button is clicked
-  //show current location and markers
-  $('#gps-btn').on("click", () => {
-    getLocation()
-  })
+/****************************************************
+  When DOM is ready
+*****************************************************/
 
+$(document).ready(function() {
   //click event for "X" button in event post
   $('.exit').on("click", () => {
     removePost()
   })
 })
 
-/**
-  * Initialize the device's GPS if present, then call setPosition
-  */
+/****************************************************
+  Initialize Google Map
+*****************************************************/
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 16
+  })
+  initAutocomplete(map)
+}
+
+/****************************************************
+  Initialize GPS
+*****************************************************/
+
 function getLocation() {
   if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(setPosition) }
   else { alert("Geolocation is not supported by this browser") }
 }
 
-/**
-  * Construct the map markers
-  */
+
+/****************************************************
+  Set the position of Map to current user location
+*****************************************************/
+
 function setPosition(position) {
   let lat = position.coords.latitude
   let lng = position.coords.longitude
 
   let userLatLng = new google.maps.LatLng(lat, lng)
-  let customMarker1 = new google.maps.LatLng(lat - 0.00015, lng + 0.0015)
-  let customMarker2 = new google.maps.LatLng(lat + 0.00010, lng - 0.0010)
-  let customMarker3 = new google.maps.LatLng(lat + 0.00028, lng + 0.0019)
-  let customMarker4 = new google.maps.LatLng(lat - 0.00019, lng - 0.0010)
 
   let mapOptions = {
   zoom: 18,
   center: userLatLng
   }
-
-  let map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
 
   let userCurrentLocation = new google.maps.Marker({
     position: userLatLng,
@@ -46,6 +53,90 @@ function setPosition(position) {
     icon: "images/placeholder.png",
     map: map
   })
+
+  map.setCenter(userLatLng)
+  placeMarkers(lat, lng)
+}
+
+/****************************************************
+  Initialize AutoComplete SearchBox
+*****************************************************/
+
+function initAutocomplete(map) {
+  let { input, btn } = createMapControls()
+
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(btn);
+
+  let autocomplete = new google.maps.places.Autocomplete(input);
+  autocomplete.bindTo('bounds', map);
+
+  let marker = new google.maps.Marker({
+    map: map,
+    anchorPoint: new google.maps.Point(0, -29)
+  });
+
+  autocomplete.addListener('place_changed', () => {
+    marker.setVisible(false);
+    let place = autocomplete.getPlace();
+    if (!place.geometry) {
+      console.log("Autocomplete's returned place contains no geometry");
+      return;
+    }
+
+    // If the place has a geometry, then present it on a map.
+    if (place.geometry.viewport) {
+      map.fitBounds(place.geometry.viewport);
+    } else {
+      map.setCenter(place.geometry.location);
+      map.setZoom(18);
+    }
+    marker.setIcon(({
+      url: "images/placeholder.png",
+      size: new google.maps.Size(71, 71),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(17, 34),
+      scaledSize: new google.maps.Size(35, 35)
+    }));
+    marker.setPosition(place.geometry.location);
+    marker.setVisible(true);
+
+    placeMarkers(place.geometry.location.lat(), place.geometry.location.lng())
+  });
+}
+
+/****************************************************
+  Create Input and GPS-Button for Map Controls
+*****************************************************/
+
+function createMapControls() {
+  let input = document.createElement("input")
+  let btn = document.createElement("button")
+
+  input.setAttribute("id", "search-location")
+  input.setAttribute("class", "map-control")
+
+  btn.setAttribute("id", "gps-btn")
+  btn.setAttribute("class", "btn btn-outline-primary")
+  btn.innerHTML = "Use GPS"
+
+  btn.addEventListener("click", getLocation)
+
+  return {
+    input,
+    btn
+  }
+}
+
+/****************************************************
+  Place Markers onto the map
+*****************************************************/
+
+function placeMarkers(lat, lng) {
+  let customMarker1 = new google.maps.LatLng(lat - 0.00015, lng + 0.0015)
+  let customMarker2 = new google.maps.LatLng(lat + 0.00010, lng - 0.0010)
+  let customMarker3 = new google.maps.LatLng(lat + 0.00028, lng + 0.0019)
+  let customMarker4 = new google.maps.LatLng(lat - 0.00019, lng - 0.0010)
 
   let marker1 = new google.maps.Marker({
     position: customMarker1,
@@ -110,6 +201,10 @@ function setPosition(position) {
   marker4.addListener('click', showPost)
 }
 
+/****************************************************
+ Post Popup Trigger Functions
+*****************************************************/
+
 //when the marker is clicked, show the event info
 function showPost() {
   let { venueName, venueImage, venueDescription, venueLocation } = this.venueInfo
@@ -122,12 +217,4 @@ function showPost() {
 
 function removePost() {
   $('#event-info').css("top", "2000px")
-}
-
-//google maps initialization
-function initMap() {
-  let map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 20
-  })
 }
