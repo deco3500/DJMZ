@@ -54,7 +54,15 @@ body {
   border-radius: 0;
 }
 
+#event-search-form {
+  margin-left: 20px;
+}
+
 #notification {
+  position: relative;
+}
+
+#event {
   position: relative;
 }
 
@@ -64,7 +72,7 @@ body {
   margin: 0;
   position: absolute;
   top: 0;
-  right: -30%;
+  right: -40%;
 }
 
 @media (max-width: 543px) {
@@ -78,6 +86,15 @@ body {
   }
   #notification {
     display: none;
+  }
+  #event-search-form {
+    width: 100%;
+  }
+  #event-search-form input {
+    margin-top: 7px;
+  }
+  #event-search-form button {
+    margin-top: 5px;
   }
 }
 
@@ -213,4 +230,21 @@ body {
   margin-left: 20px;
   margin-top: 10px;
   height: 32px;
+}
+
+@media (max-width: 543px) {
+  #search-location {
+    width: 150px;
+  }
+}
+
+@media (max-width: 324px) {
+  #search-location {
+    width: 100px;
+  }
+  #gps-btn {
+    font-size: 1em;
+    width: 70px;
+    text-align: center;
+  }
 }
