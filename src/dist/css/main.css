@@ -88,10 +88,6 @@ footer .footer-item {
   width: 100px;
 }
 
-footer .footer-item:hover {
-  color: grey;
-}
-
 footer .footer-item i {
   color: white;
 }
@@ -140,7 +136,7 @@ footer .footer-item .popup-content .popup-content-row {
 }
 
 footer .footer-item .popup-content .popup-content-row:hover {
-  background-color: grey;
+  background-color: orange;
 }
 
 footer .footer-item .popup-content .popup-content-row i {
