@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Local News</title>
+
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/dist/css/main.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-inverse">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="main-nav">
+        <a class="navbar-brand" href="index.html">DJMZ</a>
+
+        <ul class="nav navbar-nav pull-sm-right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="profile-main">
+      <div class="profile-bio">
+        <div class="profile-user-image">
+            <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="profile-user-detail">
+          <h2 class="profile-name">John Doe</h2>
+          <h2 class="profile-username">JD-Yo</h2>
+        </div>
+      </div>
+
+      <div class="profile-badges">
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-item" id="account">
+        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+      </div>
+
+      <div class="footer-item" id="notification">
+        <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
+        <span class="badge">4</span>
+
+        <div class="popup popup-notification">
+          <div class="popup-content">
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-female fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-item" id="event">
+        <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+        <span class="badge">6</span>
+
+        <div class="popup popup-event">
+          <div class="popup-content ">
+            <div class="event-search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search event..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-outline-primary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/jQuery/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="src/dist/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap&libraries=places"
+    async defer></script>
+  </body>
+  </html>
