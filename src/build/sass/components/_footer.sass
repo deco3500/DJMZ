@@ -1,0 +1,97 @@
+footer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  height: 70px
+  background-color: rgb(56,58,60)
+
+  .footer-item
+    text-align: center
+    position: relative
+    width: 100px
+
+    &:hover
+      color: grey
+
+    i
+      color: white
+      &:hover
+        color: grey
+        cursor: pointer
+
+    span.badge
+      position: absolute
+      background-color: orange
+      color: white
+      width: 20px
+      height: 20px
+      border-radius: 150px
+      text-align: center
+
+    div.popup
+      position: absolute
+      top: -330px
+      left: -75px
+      background-color: white
+      width: 250px
+      height: 300px
+      box-shadow: -3px 10px 20px 10px rgba(0,0,0,0.64)
+
+    .popup-content
+      width: 100%
+
+      .popup-content-row
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin: 7px
+        border: 1px solid grey
+
+        &:hover
+          background-color: grey
+        i
+          color: black
+          margin: 5px
+
+    .popup-notification
+      display: none
+      justify-content: center
+
+      &::after
+        position: absolute
+        content: ""
+        width: 0px
+        height: 0px
+        bottom: -20px
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 25px solid white
+
+    .popup-event
+      display: none
+      justify-content: center
+
+      &::after
+        position: absolute
+        content: ""
+        width: 0px
+        height: 0px
+        bottom: -23.5px
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 25px solid white
+        right: -0.2px
+
+      input.form-control
+        border-radius: 0
+
+      button.btn
+        border-radius: 0
+
+.fa-3x
+  font-size: 2.8em
+
+@media (max-width: 543px)
+  .fa-3x
+    font-size: 2em

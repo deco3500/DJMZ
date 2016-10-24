@@ -1,53 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Local News</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Local News</title>
 
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/dist/css/main.css">
   </head>
-
   <body>
-    <div id="main">
-      <nav class="main-nav">
-        <ul>
-          <li><a class="menu-link">&#9776; Main Menu</a>
-            <ul id="side-main-menu" class="main-menu">
-              <p class="exit-nav">X</p>
-              <li class="side-menu-home"><a href="index.html" >Home</a></li>
-              <li><a href="registration.html">Sign in / Sign up</a></li>
-              <li><a href="About_Us.html" >About Us</a></li>
-              <li><a href="Contact_Us.html" >Contact Us</a></li>
-              <li><a href="Terms_of_Use.html" >Terms of Use</a></li>
-              <li><a href="Privacy_Policy.html" >Privacy Policy</a></li>
-            </ul>
-          </li>
-          <li style="float:right"><a href="profile.html">&#9776; Profile</a></li>
-          <li style="float:right"><a href="#">&#9776; Search</a></li>
-        </ul>
-      </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-inverse">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="main-nav">
+        <a class="navbar-brand" href="#">DJMZ</a>
 
-      <div id="map-container">
-        <div id="map-canvas"></div>
-        <div id="map-location-permission">
-          <button type="button" class="btn" id="gps-btn">Use GPS</button>
-          <p class="or"> or </p>
-          <div class="map-location-permission-input">
-            <input type="text" />
-            <button type="button" class="btn btn-inline">Search</button>
+        <ul class="nav navbar-nav pull-sm-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Google Map placeholder -->
+    <div id="map-canvas"></div>
+
+    <!-- A Popup window when icon on the map clicked -->
+    <div id="event-info">
+      <div class="event-info-contents">
+        <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
+
+        <h1 class="event-name"></h1>
+
+        <div class="event-info-images">
+          <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
+        </div>
+
+        <div class="event-info-description">
+          <p class="event-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="event-info-interactions">
+          <!-- LIKE button, SHARE button, comments -->
+          <div class="button-group">
+            <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container footer">
-      <img src="images/post.png" class="post-icon" />
-    </div>
+    <footer>
+      <div class="footer-item" id="account">
+        <a href="profile.html"><i class="fa fa-user fa-3x" aria-hidden="true"></i></a>
+      </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="src/js/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap"
+      <div class="footer-item" id="notification">
+        <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
+        <span class="badge">4</span>
+
+        <div class="popup popup-notification">
+          <div class="popup-content">
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-female fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-item" id="event">
+        <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+        <span class="badge">6</span>
+
+        <div class="popup popup-event">
+          <div class="popup-content ">
+            <div class="event-search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search event..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-outline-primary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/jQuery/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="src/dist/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap&libraries=places"
     async defer></script>
   </body>
 </html>
