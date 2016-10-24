@@ -22,25 +22,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>
-Profile</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="notification">
-              <i class="fa fa-bell icon-grey" aria-hidden="true"></i>
-              <span class="badge">4</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="event">
-              <i class="fa fa-calendar icon-grey" aria-hidden="true"></i>
-              <span class="badge">6</span>
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -54,20 +35,6 @@ Profile</a>
 
     <!-- Google Map placeholder -->
     <div id="map-canvas"></div>
-
-    <nav class="navbar navbar-light bg-faded" id="footer">
-      <div class="col-md-4">
-        <a class="footer-link" href="contact_us.html">Contact Us</a>
-      </div>
-
-      <div class="col-md-4">
-        <a class="footer-link" href="terms.html">Terms of Use</a>
-      </div>
-
-      <div class="col-md-4">
-        <a class="footer-link" href="privacy.html">Privacy Policy</a>
-      </div>
-    </nav>
 
     <!-- A Popup window when icon on the map clicked -->
     <div id="event-info">
@@ -97,17 +64,63 @@ Profile</a>
       </div>
     </div>
 
-    <!-- Notification Window -->
-    <div id="notification-info">
-      <div class="notification-info-contents">
-        
+    <footer>
+      <div class="footer-item" id="account">
+        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
       </div>
-    </div>
 
+      <div class="footer-item" id="notification">
+        <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
+        <span class="badge">4</span>
+
+        <div class="popup popup-notification">
+          <div class="popup-content">
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-female fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+
+            <div class="popup-content-row">
+              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+              <h2>Jack has invited you to join his party at Cloudland</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-item" id="event">
+        <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+        <span class="badge">6</span>
+
+        <div class="popup popup-event">
+          <div class="popup-content ">
+            <div class="event-search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search event..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-outline-primary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="assets/jQuery/jquery.min.js"></script>
     <script src="assets/bootstrap/bootstrap.min.js"></script>
-    <script src="src/dist/js/mapControl.js"></script>
+    <script src="src/dist/js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap&libraries=places"
     async defer></script>
   </body>
