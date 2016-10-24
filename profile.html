@@ -16,50 +16,57 @@
         &#9776;
       </button>
       <div class="collapse navbar-toggleable-xs" id="main-nav">
-        <a class="navbar-brand" href="#">DJMZ</a>
+        <a class="navbar-brand" href="index.html">DJMZ</a>
 
         <ul class="nav navbar-nav pull-sm-right">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Google Map placeholder -->
-    <div id="map-canvas"></div>
+    <div id="profile-main">
+      <div class="profile-bio">
+        <div class="profile-user-image">
+            <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="profile-user-detail">
+          <h2 class="profile-name">John Doe</h2>
+          <h2 class="profile-username">JD-Yo</h2>
+        </div>
+      </div>
 
-    <!-- A Popup window when icon on the map clicked -->
-    <div id="event-info">
-      <div class="event-info-contents">
-        <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
-
-        <h1 class="event-name"></h1>
-
-        <div class="event-info-images">
-          <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
+      <div class="profile-badges">
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
         </div>
 
-        <div class="event-info-description">
-          <p class="event-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
         </div>
 
-        <div class="event-info-interactions">
-          <!-- LIKE button, SHARE button, comments -->
-          <div class="button-group">
-            <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
-          </div>
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
+        </div>
+
+        <div class="reward-badge">
+          <i class="fa fa-trophy fa-4x" aria-hidden="true"></i>
         </div>
       </div>
     </div>
 
     <footer>
       <div class="footer-item" id="account">
-        <a href="profile.html"><i class="fa fa-user fa-3x" aria-hidden="true"></i></a>
+        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
       </div>
 
       <div class="footer-item" id="notification">
@@ -117,4 +124,4 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCen1ciHAKvZcEGWlSvSmb-l2YMkHzCYAs&callback=initMap&libraries=places"
     async defer></script>
   </body>
-</html>
+  </html>

@@ -1,0 +1,57 @@
+#profile-main
+  display: flex
+  flex-direction: column
+
+  .profile-bio
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: orange
+
+    .profile-user-image
+      margin-top: 10px
+      i
+        background-color: white
+        border-radius: 50%
+        padding: 20px
+
+    .profile-user-detail
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 15px
+
+      .profile-name
+        font-size: 1.5em
+        font-weight: bold
+
+      .profile-username
+        margin-top: 10px
+
+
+  .profile-badges
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    .reward-badge
+      display: flex
+      width: 33%
+      height: 120px
+      justify-content: center
+      align-items: center
+      background-color: orange
+
+      i
+        background-color: pink
+        border-radius: 50%
+        padding: 20px
+
+
+@media (max-width: 543px)
+  #profile-main
+    .profile-badges
+      .reward-badge
+        i
+          font-size: 2.5em
