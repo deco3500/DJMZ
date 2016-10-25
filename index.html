@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="src/dist/css/main.css">
+
+  <style>
+    body {
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -25,38 +31,36 @@
       </ul>
     </div>
   </nav>
+    <!-- Google Map placeholder -->
+    <div id="map-canvas"></div>
 
-  <!-- Google Map placeholder -->
-  <div id="map-canvas"></div>
+    <!-- A Popup window when icon on the map clicked -->
+    <div id="event-info">
+      <div class="event-info-contents">
+        <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
 
-  <!-- A Popup window when icon on the map clicked -->
-  <div id="event-info">
-    <div class="event-info-contents">
-      <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <h1 class="event-name"></h1>
 
-      <h1 class="event-name"></h1>
+        <div class="event-info-images">
+          <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
+        </div>
 
-      <div class="event-info-images">
-        <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
-      </div>
+        <div class="event-info-description">
+          <p class="event-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
 
-      <div class="event-info-description">
-        <p class="event-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-
-      <div class="event-info-interactions">
-        <!-- LIKE button, SHARE button, comments -->
-        <div class="button-group">
-          <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
-          <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
+        <div class="event-info-interactions">
+          <!-- LIKE button, SHARE button, comments -->
+          <div class="button-group">
+            <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
   <footer>
     <div class="footer-item" id="account">
       <a href="profile.html"><i class="fa fa-user fa-3x" aria-hidden="true"></i></a>
