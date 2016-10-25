@@ -5,6 +5,9 @@ footer
   align-items: center
   height: 70px
   background-color: rgb(56,58,60)
+  position: fixed
+  bottom: 0
+  width: 100%
 
   .footer-item
     text-align: center
@@ -48,14 +51,15 @@ footer
         margin: 7px
         border: 1px solid grey
 
-        &:hover
-          background-color: grey
-        i
-          color: black
-          margin: 5px
-
-        h2
+        .event-detail
           text-align: left
+          margin-left: 5px
+
+          h2
+            font-weight: bold
+
+          span
+            font-size: 0.8em
 
     .popup-notification
       display: none
@@ -91,6 +95,18 @@ footer
 
       button.btn
         border-radius: 0
+
+      .popup-content
+        .event-time-limit
+          margin-top: 5px
+          margin-bottom: 5px
+
+          h2
+            margin-bottom: 7px
+
+          .time-limit-buttons
+            input
+              width: 30px
 
 .fa-3x
   font-size: 2.8em
