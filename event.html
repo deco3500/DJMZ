@@ -26,35 +26,17 @@
     </div>
   </nav>
 
-  <!-- Google Map placeholder -->
-  <div id="map-canvas"></div>
-
-  <!-- A Popup window when icon on the map clicked -->
-  <div id="event-info">
-    <div class="event-info-contents">
-      <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
-
-      <h1 class="event-name"></h1>
-
-      <div class="event-info-images">
-        <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
-      </div>
-
-      <div class="event-info-description">
-        <p class="event-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-
-      <div class="event-info-interactions">
-        <!-- LIKE button, SHARE button, comments -->
-        <div class="button-group">
-          <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
-          <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
-        </div>
+  <!-- Main Event Content -->
+  <div>
+    <div class="row" style="margin-top:20px;">
+      <div class="col-md-3"></div>
+      <div class="col-md-2">  
+        <img src="images/justagent.jpg" width="600px" height="300px" />
       </div>
     </div>
+    Event Name:
+    Event Description:
+    Date submitted:
   </div>
 
   <footer>
@@ -68,7 +50,7 @@
 
       <div class="popup popup-notification">
         <div class="popup-content">
-          <div class="popup-content-row">
+          <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
             <i class="fa fa-male fa-2x" aria-hidden="true"></i>
             <h2>Jack has invited you to join his party at Cloudland</h2>
           </div>
@@ -101,20 +83,12 @@
               </span>
             </div>
 
-            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='event.html';">
-              <div class="row">
-              <div class="col-md-3"><img src="" width="66px" height="66px" /></div>
-                <div class="col-md-9">
-                  <h2>Just A Gent Tour</h2>
-                  <span>
-                    Friday at Stockies Exchange
-                  </span>
-                </div>
-              </div>
-              
+            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
+              <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+              <h2>Just A Gent Tour @ Stockies</h2>
             </div>
 
-            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='event2.html';">
+            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
               <i class="fa fa-headphones fa-2x" aria-hidden="true"></i>
               <h2>FOMO Brisbane @ The Victory Hotel</h2>
             </div>
