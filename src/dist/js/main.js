@@ -173,7 +173,7 @@ function placeMarkers(lat, lng) {
     map: map,
     venueInfo: {
       venueName: "Bacchus Bar Restaurant And Pool",
-      venueImage: "../../../images/places/bacchus.JPG",
+      venueImage: "images/places/bacchus.JPG",
       venueDescription: "This place is so cheap!! Buy one and get one free SPIRIT!",
       venueLocation: "Podium Level, Rydges South Bank, Grey & Glenelg Sts., South Brisbane QLD 4101"
     }
@@ -187,7 +187,7 @@ function placeMarkers(lat, lng) {
     map: map,
     venueInfo: {
       venueName: "Cloudland",
-      venueImage: "../../../images/places/cloudland.jpg",
+      venueImage: "images/places/cloudland.jpg",
       venueDescription: "Only few people here! Very quiet and relaxed",
       venueLocation: "641 Ann St, Fortitude Valley QLD 4006"
     }
@@ -201,7 +201,7 @@ function placeMarkers(lat, lng) {
     map: map,
     venueInfo: {
       venueName: "The Fringe Bar",
-      venueImage: "../../../images/places/fringebar.jpg",
+      venueImage: "images/places/fringebar.jpg",
       venueDescription: "This place totally rips you off!! Don't pay 15 bucks for a beer!",
       venueLocation: "Ann St & Constance Street, Fortitude Valley QLD 4006"
     }
@@ -215,7 +215,7 @@ function placeMarkers(lat, lng) {
     map: map,
     venueInfo: {
       venueName: "Jade Buddha",
-      venueImage: "../../../images/places/jadeBuddha.jpg",
+      venueImage: "images/places/jadeBuddha.jpg",
       venueDescription: "Packed with people here, if you wanna experience a human hamburger I definitely recommend you to come here :)",
       venueLocation: "14/1 Eagle St, Brisbane City QLD 4000"
     }
