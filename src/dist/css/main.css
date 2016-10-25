@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -300,7 +301,7 @@ footer .footer-item .popup-event button.btn {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: orange;
+  background-color: #F95738;
 }
 
 #profile-main .profile-bio .profile-user-image {
@@ -333,21 +334,39 @@ footer .footer-item .popup-event button.btn {
 
 #profile-main .profile-bio .profile-user-detail .profile-username {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #profile-main .profile-badges {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  background-color: orange;
 }
 
-#profile-main .profile-badges .reward-badge {
+#profile-main .profile-badges .reward-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 420px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#profile-main .profile-badges .reward-container .reward-badge {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -359,18 +378,33 @@ footer .footer-item .popup-event button.btn {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: orange;
+  border-radius: 50%;
+  position: relative;
 }
 
-#profile-main .profile-badges .reward-badge i {
+#profile-main .profile-badges .reward-container .reward-badge img {
   background-color: pink;
   border-radius: 50%;
   padding: 20px;
 }
 
+#profile-main .profile-badges .reward-container .reward-badge img:hover {
+  cursor: pointer;
+  background-color: #ff8da1;
+}
+
+#profile-main .profile-badges .reward-container .reward-badge .reward-badge-count {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #FAF0CA;
+  padding: 6px 10px 6px 10px;
+  border-radius: 50%;
+}
+
 @media (max-width: 543px) {
-  #profile-main .profile-badges .reward-badge i {
-    font-size: 2.5em;
+  #profile-main .profile-badges .reward-container {
+    width: 100%;
   }
 }
 

@@ -7,7 +7,7 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    background-color: orange
+    background-color: #F95738
 
     .profile-user-image
       margin-top: 10px
@@ -28,30 +28,51 @@
 
       .profile-username
         margin-top: 10px
-
+        margin-bottom: 20px
 
   .profile-badges
     display: flex
-    flex-direction: row
     justify-content: center
+    width: 100%
+    background-color: orange
 
-    .reward-badge
+    .reward-container
       display: flex
-      width: 33%
-      height: 120px
+      flex-direction: row
+      flex-wrap: wrap
       justify-content: center
-      align-items: center
-      background-color: orange
+      width: 420px
+      margin-top: 25px
+      margin-bottom: 25px
 
-      i
-        background-color: pink
+      .reward-badge
+        display: flex
+        width: 33%
+        height: 120px
+        justify-content: center
+        align-items: center
         border-radius: 50%
-        padding: 20px
 
+        position: relative
+
+        img
+          background-color: pink
+          border-radius: 50%
+          padding: 20px
+          &:hover
+            cursor: pointer
+            background-color: darken(pink, 10%)
+
+        .reward-badge-count
+          position: absolute
+          top: 5px
+          right: 10px
+          background-color: #FAF0CA
+          padding: 6px 10px 6px 10px
+          border-radius: 50%
 
 @media (max-width: 543px)
   #profile-main
     .profile-badges
-      .reward-badge
-        i
-          font-size: 2.5em
+      .reward-container
+        width: 100%

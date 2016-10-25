@@ -181,14 +181,14 @@ function placeMarkers(lat, lng) {
 
   let marker2 = new google.maps.Marker({
     position: customMarker2,
-    title: "Too Crowded",
+    title: "Quiet Place",
     animation: google.maps.Animation.DROP,
-    icon: "images/group.png",
+    icon: "images/not-busy.png",
     map: map,
     venueInfo: {
       venueName: "Cloudland",
       venueImage: "../../../images/places/cloudland.jpg",
-      venueDescription: "So so so so crowded, can't even dance here :(",
+      venueDescription: "Only few people here! Very quiet and relaxed",
       venueLocation: "641 Ann St, Fortitude Valley QLD 4006"
     }
   })
