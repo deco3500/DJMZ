@@ -8,13 +8,10 @@
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="src/dist/css/main.css">
-  <style>
-    body{
-      background-color: #F95738;
-    }
-  </style>
+
+  <style> body { background-color: #F95738;} </style>
 </head>
-<body>
+<body id="event-body">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-dark bg-inverse">
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,27 +28,27 @@
   </nav>
 
   <!-- Main Event Content -->
-  <div style="margin-bottom: 70px;">
-    <div class="row" style="margin-top:20px;">
+  <div id="main">
+    <div class="row">
       <div class="col-md-3"></div>
-      <div class="col-md-6">  
-        <div class="card" style="border: none;">
+      <div class="col-md-6">
+        <div class="card">
           <img class="card-img-top" src="images/justagent.jpg" width="100%" height="100%" alt="Card image cap">
           <div class="card-block">
             <h4 class="card-title">Just a Gent (Just a Tour)</h4>
-            <h1 style="border-bottom: 1px solid #e5e5e5; margin-bottom: 5px;"></h1>
+            <h1 class="divider"></h1>
             <p class="card-text">
               <i class="fa fa-calendar" aria-hidden="true"></i>
               Dec 1 at 8 PM to Dec 2 at 11:59 PM
-              <h1 style="border-bottom: 1px solid #e5e5e5; margin-top: 5px; margin-bottom:5px;"></h1>
+              <h1 class="divider"></h1>
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               Riverstage Botanical Gardens
-              <h1 style="border-bottom: 1px solid #e5e5e5; margin-top: 5px;"></h1>
-              <p style="margin-top: 5px;">
+              <h1 class="divider"></h1>
+              <p class="card-content">
                 <i class="fa fa-info" aria-hidden="true"></i>
-                Australia’s biggest electronic export Flume will embark on a massive world tour - including a run of huge national dates in November/December - to celebrate the release of his anticipated forthcoming album, Skin (out May 27 via Future Classic: preorder here). 
+                Australia’s biggest electronic export Flume will embark on a massive world tour - including a run of huge national dates in November/December - to celebrate the release of his anticipated forthcoming album, Skin (out May 27 via Future Classic: preorder here).
 
-                Support comes from unstoppable Long Beach MC Vince Staples - who features as a special guest on the album for ‘Smoke & Retribution’ - and enigmatic UK producer SOPHIE. Both acts were highlights of the Laneway bill this year - Vince with his excellent first album Summertime '06 in tow, and SOPHIE on the back of his avant-garde electronic debut Product. 
+                Support comes from unstoppable Long Beach MC Vince Staples - who features as a special guest on the album for ‘Smoke & Retribution’ - and enigmatic UK producer SOPHIE. Both acts were highlights of the Laneway bill this year - Vince with his excellent first album Summertime '06 in tow, and SOPHIE on the back of his avant-garde electronic debut Product.
               </p><br/>
             </p>
 
@@ -63,23 +60,23 @@
               </div>
             </div>
           </div>
-        </div>      
+        </div>
       </div>
     </div>
   </div>
 
   <footer>
     <div class="footer-item" id="account">
-      <a href="profile.html"><i class="fa fa-user fa-3x" aria-hidden="true"></i></a>
+      <a href="profile.html"><i class="fa fa-user fa-3x footer-icon" aria-hidden="true"></i></a>
     </div>
 
     <div class="footer-item" id="notification">
-      <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-bell fa-3x footer-icon" aria-hidden="true"></i>
       <span class="badge">3</span>
 
       <div class="popup popup-notification">
         <div class="popup-content">
-          <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
+          <div class="popup-content-row">
             <i class="fa fa-male fa-2x" aria-hidden="true"></i>
             <h2>Jack has invited you to join his party at Cloudland</h2>
           </div>
@@ -99,11 +96,14 @@
 
 
     <div class="footer-item" id="event">
-      <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-calendar fa-3x footer-icon" aria-hidden="true"></i>
       <span class="badge">2</span>
 
       <div class="popup popup-event">
         <div class="popup-content ">
+          <div class="event-time-limit">
+            <label>Time Limit: <input type="number"> min</label>
+          </div>
           <div class="event-search">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search event..." />
@@ -112,14 +112,24 @@
               </span>
             </div>
 
-            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
-              <h2>Just A Gent Tour @ Stockies</h2>
+            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='event.html';">
+              <img src="images/justagent.jpg" />
+              <div class="event-detail">
+                <h2>Just A Gent Tour</h2>
+                <span>
+                  Friday at Stockies Exchange
+                </span>
+              </div>
             </div>
 
-            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <i class="fa fa-headphones fa-2x" aria-hidden="true"></i>
-              <h2>FOMO Brisbane @ The Victory Hotel</h2>
+            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='event2.html';">
+              <img src="images/fomo.jpg" />
+              <div class="event-detail">
+                <h2>FOMO Brisbane @ The Victory Hotel</h2>
+                <span>
+                  Saturday Late Party
+                </span>
+              </div>
             </div>
 
           </div>
@@ -127,6 +137,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="assets/jQuery/jquery.min.js"></script>
   <script src="assets/bootstrap/bootstrap.min.js"></script>
