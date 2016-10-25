@@ -76,12 +76,12 @@
 
     <footer>
       <div class="footer-item" id="account">
-        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+        <a href="profile.html"><i class="fa fa-user fa-3x footer-icon" aria-hidden="true"></i></a>
       </div>
 
       <div class="footer-item" id="notification">
-        <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
-        <span class="badge">4</span>
+        <i class="fa fa-bell fa-3x footer-icon" aria-hidden="true"></i>
+        <span class="badge">3</span>
 
         <div class="popup popup-notification">
           <div class="popup-content">
@@ -90,19 +90,14 @@
               <h2>Jack has invited you to join his party at Cloudland</h2>
             </div>
 
-            <div class="popup-content-row">
+            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
               <i class="fa fa-female fa-2x" aria-hidden="true"></i>
-              <h2>Jack has invited you to join his party at Cloudland</h2>
+              <h2>Sally has invited you to join his party at The Fringe</h2>
             </div>
 
-            <div class="popup-content-row">
+            <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='http://google.com';">
               <i class="fa fa-male fa-2x" aria-hidden="true"></i>
-              <h2>Jack has invited you to join his party at Cloudland</h2>
-            </div>
-
-            <div class="popup-content-row">
-              <i class="fa fa-male fa-2x" aria-hidden="true"></i>
-              <h2>Jack has invited you to join his party at Cloudland</h2>
+              <h2>Joe has invited you to join his party at Bacchus Bar</h2>
             </div>
           </div>
         </div>
@@ -110,11 +105,14 @@
 
 
       <div class="footer-item" id="event">
-        <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
-        <span class="badge">6</span>
+        <i class="fa fa-calendar fa-3x footer-icon" aria-hidden="true"></i>
+        <span class="badge">2</span>
 
         <div class="popup popup-event">
           <div class="popup-content ">
+            <div class="event-time-limit">
+              <label>Time Limit: <input type="number"> min</label>
+            </div>
             <div class="event-search">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search event..." />
@@ -122,11 +120,33 @@
                   <button class="btn btn-outline-primary" type="button">Go!</button>
                 </span>
               </div>
+
+              <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='event.html';">
+                <img src="images/justagent.jpg" />
+                <div class="event-detail">
+                  <h2>Just A Gent Tour</h2>
+                  <span>
+                    Friday at Stockies Exchange
+                  </span>
+                </div>
+              </div>
+
+              <div class="popup-content-row" style="cursor: pointer;" onclick="window.location='event2.html';">
+                <img src="images/fomo.jpg" />
+                <div class="event-detail">
+                  <h2>FOMO Brisbane @ The Victory Hotel</h2>
+                  <span>
+                    Saturday Late Party
+                  </span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </footer>
+
 
     <script src="assets/jQuery/jquery.min.js"></script>
     <script src="assets/bootstrap/bootstrap.min.js"></script>

@@ -470,6 +470,39 @@ footer .footer-item .popup-event .popup-content .event-time-limit label input {
   }
 }
 
+#main {
+  margin-bottom: 70px;
+}
+
+#main .row {
+  margin-top: 20px;
+}
+
+#main .row .card {
+  border: none;
+}
+
+#main .row .card img.card-img-top {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+#main .row .card div.card-block h1.divider {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+
+#main .row .card div.card-block p.card-content {
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  #event-body {
+    background-color: transparent;
+  }
+}
+
 #map-canvas {
   -webkit-flex: 1;
       -ms-flex: 1;
