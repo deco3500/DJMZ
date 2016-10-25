@@ -89,6 +89,10 @@ footer .footer-item {
   width: 100px;
 }
 
+footer .footer-item:hover {
+  color: grey;
+}
+
 footer .footer-item i {
   color: white;
 }
@@ -137,12 +141,16 @@ footer .footer-item .popup-content .popup-content-row {
 }
 
 footer .footer-item .popup-content .popup-content-row:hover {
-  background-color: orange;
+  background-color: grey;
 }
 
 footer .footer-item .popup-content .popup-content-row i {
   color: black;
   margin: 5px;
+}
+
+footer .footer-item .popup-content .popup-content-row h2 {
+  text-align: left;
 }
 
 footer .footer-item .popup-notification {
