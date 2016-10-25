@@ -91,10 +91,6 @@ footer .footer-item {
   width: 100px;
 }
 
-footer .footer-item:hover {
-  color: grey;
-}
-
 footer .footer-item i {
   color: white;
 }
@@ -140,6 +136,16 @@ footer .footer-item .popup-content .popup-content-row {
           align-items: center;
   margin: 7px;
   border: 1px solid grey;
+  padding: 5px;
+}
+
+footer .footer-item .popup-content .popup-content-row i {
+  color: black;
+}
+
+footer .footer-item .popup-content .popup-content-row img {
+  width: 66px;
+  height: 66px;
 }
 
 footer .footer-item .popup-content .popup-content-row .event-detail {
@@ -153,6 +159,7 @@ footer .footer-item .popup-content .popup-content-row .event-detail h2 {
 
 footer .footer-item .popup-content .popup-content-row .event-detail span {
   font-size: 0.8em;
+  color: grey;
 }
 
 footer .footer-item .popup-notification {
@@ -205,11 +212,7 @@ footer .footer-item .popup-event .popup-content .event-time-limit {
   margin-bottom: 5px;
 }
 
-footer .footer-item .popup-event .popup-content .event-time-limit h2 {
-  margin-bottom: 7px;
-}
-
-footer .footer-item .popup-event .popup-content .event-time-limit .time-limit-buttons input {
+footer .footer-item .popup-event .popup-content .event-time-limit label input {
   width: 30px;
 }
 
@@ -436,8 +439,7 @@ footer .footer-item .popup-event .popup-content .event-time-limit .time-limit-bu
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   background-color: lightslategray;
 }
 
