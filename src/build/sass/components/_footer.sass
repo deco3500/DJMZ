@@ -1,15 +1,120 @@
-#footer
-  height: 70px
-  background-color: pink
-
+footer
   display: flex
+  flex-direction: row
+  justify-content: center
   align-items: center
+  height: 70px
+  background-color: rgb(56,58,60)
+  position: fixed
+  bottom: 0
+  width: 100%
 
-  .col-md-4
-    display: flex
-    justify-content: center
-    align-items: center
+  .footer-item
+    text-align: center
+    position: relative
+    width: 100px
 
-    .footer-link
+    i
       color: white
-      font-size: 1.3em
+      &:hover
+        color: grey
+        cursor: pointer
+
+    span.badge
+      position: absolute
+      background-color: orange
+      color: white
+      width: 20px
+      height: 20px
+      border-radius: 150px
+      text-align: center
+
+    div.popup
+      position: absolute
+      top: -330px
+      left: -75px
+      background-color: white
+      width: 250px
+      height: 300px
+      box-shadow: -3px 10px 20px 10px rgba(0,0,0,0.64)
+
+    .popup-content
+      width: 100%
+
+      .popup-content-row
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin: 7px
+        border: 1px solid grey
+        padding: 5px
+
+        i
+          color: black
+
+
+        img
+          width: 66px
+          height: 66px
+
+        .event-detail
+          text-align: left
+          margin-left: 5px
+
+          h2
+            font-weight: bold
+
+          span
+            font-size: 0.8em
+            color: grey
+
+    .popup-notification
+      display: none
+      justify-content: center
+
+      &::after
+        position: absolute
+        content: ""
+        width: 0px
+        height: 0px
+        bottom: -20px
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 25px solid white
+
+    .popup-event
+      display: none
+      justify-content: center
+
+      &::after
+        position: absolute
+        content: ""
+        width: 0px
+        height: 0px
+        bottom: -23.5px
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 25px solid white
+        right: -0.2px
+
+      input.form-control
+        border-radius: 0
+
+      button.btn
+        border-radius: 0
+
+      .popup-content
+        .event-time-limit
+          margin-top: 5px
+          margin-bottom: 5px
+
+          label
+            input
+              width: 30px
+
+.fa-3x
+  font-size: 2.8em
+
+@media (max-width: 543px)
+  .fa-3x
+    font-size: 2em

@@ -1,0 +1,112 @@
+#places-main
+  display: flex
+  flex-direction: column
+
+  .places-section
+    width: 100%
+
+    .places-heading
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      background-color: #F95738
+      height: 80px
+
+      h1
+        font-size: 2em
+        text-transform: uppercase
+
+    .places-content
+      background-color: orange
+      display: flex
+      justify-content: center
+      align-items: center
+
+      &:hover
+        background-color: darken(orange, 10%)
+        cursor: pointer
+
+      .places-content-row
+        display: flex
+        flex-direction: row
+        width: 35%
+
+        img
+          background-color: pink
+          border-radius: 50%
+          padding: 5px
+          margin: 20px
+
+        .places-detail
+          width: 100%
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: flex-start
+          margin-left: 20px
+
+          h2
+            font-size: 1.4em
+            margin-bottom: 5px
+            font-weight: bold
+
+          h3
+            color: lighten(black, 20%)
+
+@media (max-width: 991px)
+  #places-main
+    .places-section
+      .places-heading
+      .places-content
+        .places-content-row
+          width: 50%
+
+@media (max-width: 800px)
+  #places-main
+    .places-section
+      .places-heading
+      .places-content
+        .places-content-row
+          width: 80%
+
+@media (max-width: 494px)
+  #places-main
+    .places-section
+      .places-heading
+        height: 60px
+        h1
+          font-size: 1.5em
+      .places-content
+        .places-content-row
+
+@media (max-width: 375px)
+  #places-main
+    .places-section
+      .places-heading
+
+      .places-content
+        .places-content-row
+          width: 95%
+
+          .places-detail
+            margin-left: 10px
+            h2
+              font-size: 1.3em
+
+@media (max-width: 320px)
+  #places-main
+    .places-section
+      .places-heading
+
+      .places-content
+        .places-content-row
+          width: 95%
+
+          .places-detail
+            margin-left: 7px
+            h2
+              font-size: 1.2em
+
+            h3
+              font-size: 0.9em

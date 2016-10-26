@@ -10,21 +10,23 @@
   <link rel="stylesheet" href="src/dist/css/main.css">
 
   <style>
-    body {
-      height: 100vh;
-      margin-bottom: 0
+  body { background-color: #F95738;}
+
+  @media (max-width: 767px) {
+    #main .row {
+      margin-top: -2px;
     }
+  }
   </style>
 </head>
-<body>
+<body id="event-body">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-dark bg-inverse">
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
       &#9776;
     </button>
     <div class="collapse navbar-toggleable-xs" id="main-nav">
-      <a class="navbar-brand" href="#">NIGHT PIDGEON</a>
-
+      <a class="navbar-brand" href="#">DJMZ</a>
       <ul class="nav navbar-nav pull-sm-right">
         <li class="nav-item active">
           <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home<span class="sr-only">(current)</span></a>
@@ -32,36 +34,44 @@
       </ul>
     </div>
   </nav>
-    <!-- Google Map placeholder -->
-    <div id="map-canvas"></div>
 
-    <!-- A Popup window when icon on the map clicked -->
-    <div id="event-info">
-      <div class="event-info-contents">
-        <span class="exit"><i class="fa fa-times" aria-hidden="true"></i></span>
+  <!-- Main Event Content -->
+  <div id="main">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="images/justagent.jpg" width="100%" height="100%" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Just a Gent (Just a Tour)</h4>
+            <h1 class="divider"></h1>
+            <p class="card-text">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Dec 1 at 8 PM to Dec 2 at 11:59 PM
+              <h1 class="divider"></h1>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              Riverstage Botanical Gardens
+              <h1 class="divider"></h1>
+              <p class="card-content">
+                <i class="fa fa-info" aria-hidden="true"></i>
+                Australia’s biggest electronic export Flume will embark on a massive world tour - including a run of huge national dates in November/December - to celebrate the release of his anticipated forthcoming album, Skin (out May 27 via Future Classic: preorder here).
 
-        <h1 class="event-name"></h1>
+                Support comes from unstoppable Long Beach MC Vince Staples - who features as a special guest on the album for ‘Smoke & Retribution’ - and enigmatic UK producer SOPHIE. Both acts were highlights of the Laneway bill this year - Vince with his excellent first album Summertime '06 in tow, and SOPHIE on the back of his avant-garde electronic debut Product.
+              </p><br/>
+            </p>
 
-        <div class="event-info-images">
-          <img src="images/places/bacchus.JPG" class="img-fluid event-photo">
-        </div>
-
-        <div class="event-info-description">
-          <p class="event-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-
-        <div class="event-info-interactions">
-          <!-- LIKE button, SHARE button, comments -->
-          <div class="button-group">
-            <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
+            <div class="modal-footer">
+              <div class="button-group" style="text-align: center;">
+                <button type="button" class="btn btn-outline-danger"><i class="fa fa-comments" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-outline-warning"><i class="fa fa-share" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <footer>
     <div class="footer-item" id="account">
@@ -135,6 +145,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="assets/jQuery/jquery.min.js"></script>
   <script src="assets/bootstrap/bootstrap.min.js"></script>
