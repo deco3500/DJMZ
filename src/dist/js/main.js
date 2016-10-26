@@ -5,7 +5,12 @@
 $(document).ready(function() {
   //click event for "X" button in event post
   $('.exit').on("click", () => {
-    removePost()
+    removePost("#event-info")
+    removePost('#post-popup')
+  })
+
+  $('.fa-pencil-square-o').on("click", () => {
+    showPostPopup()
   })
 
   //when notification button is clicked
@@ -80,6 +85,8 @@ function setPosition(position) {
     icon: "images/placeholder.png",
     map: map
   })
+
+  userCurrentLocation.addListener("click", showPostPopup)
 
   map.setCenter(userLatLng)
   placeMarkers(lat, lng)
@@ -222,10 +229,10 @@ function placeMarkers(lat, lng) {
   })
 
   //Click listeners for the markers
-  marker1.addListener('click', showPost)
-  marker2.addListener('click', showPost)
-  marker3.addListener('click', showPost)
-  marker4.addListener('click', showPost)
+  marker1.addListener('click', showEventPost)
+  marker2.addListener('click', showEventPost)
+  marker3.addListener('click', showEventPost)
+  marker4.addListener('click', showEventPost)
 }
 
 /****************************************************
@@ -233,7 +240,7 @@ function placeMarkers(lat, lng) {
 *****************************************************/
 
 //when the marker is clicked, show the event info
-function showPost() {
+function showEventPost() {
   let { venueName, venueImage, venueDescription, venueLocation } = this.venueInfo
   $('.event-name').text(venueName)
   $('.event-photo').attr('src', venueImage)
@@ -242,6 +249,10 @@ function showPost() {
   $('#event-info').css("top", "70px")
 }
 
-function removePost() {
-  $('#event-info').css("top", "2000px")
+function showPostPopup() {
+  $('#post-popup').css("top", "70px")
+}
+
+function removePost(id) {
+  $(id).css("top", "2000px")
 }
