@@ -1,7 +1,5 @@
 # DJMZ
 
-#URL: https://s4340124-djmz.uqcloud.net
-
 ## Introduction:
 **DJMZ** will be creating a mobile compatible web application to deliver local news within a user’s vicinity using a visual map. It will covering both formal and informal news. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events. 
 
