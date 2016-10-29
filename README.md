@@ -9,6 +9,12 @@ The application will allow users to share pictures, videos, and any other conten
  The main **target audience** will be for young people (30 years of age and below) who have grown accustomed to smartphone and GPS technology.
  
  The uniqueness of the application is that it is a fusion between user-submitted content and geographically tagged news content. It is a platform where user can do both upload and read the news content at the same time.
+ 
+##Mobile Web Prototype:
+http://simplifyweb.github.io/djmz
+ 
+##Promotional Video:
+
 
 ## Team:
 | Names             | Student Number |        Roles                                               |
