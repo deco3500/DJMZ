@@ -8,8 +8,13 @@
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="src/dist/css/main.css">
+  <style>
+    .table > tbody > tr > td {
+     vertical-align: middle;
+   }
+ </style>
 </head>
-<body>
+<body style="background-color: lightgray">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-dark bg-inverse">
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +32,13 @@
   </nav>
 
   <div class="row" style="margin-top: 20px;">
-    <div class="col-md-4"></div>
+    <div class="col-md-5"></div>
     <div class="col-md-4" style="font-size: 30px;">Find your friends on:</div>
     <div class="col-md-4"></div>
   </div>
 
   <div class="row" style="margin-top: 20px;">
-    <div class="col-md-4"></div>
+    <div class="col-md-5"></div>
     <div class="col-md-4">
       <img src="images/fb.png" style="height: 50px; width: 50px; cursor: pointer;" />
       <img src="images/twitter.png" style="height: 50px; width: 50px; cursor: pointer;" />
@@ -44,109 +49,66 @@
     <div class="col-md-4"></div>
   </div>
 
-  <div class="row" style="margin-top: 20px; margin-left: 20px;">
-    <div class="col-md-1"></div>
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <table class="table table-hover table-inverse">
+        <thead>
+          <tr>
+            <th></th>
+            <th><i class="fa fa-user" aria-hidden="true"></i> Name</th>
+            <th><i class="fa fa-street-view" aria-hidden="true"></i> Distance</th>
+            <th><i class="fa fa-envelope" aria-hidden="true"></i> Invite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img src="images/profile1.jpg" style="height: 180px; width: 180px;" /></th>
+            <td>Justin Timberlake</td>
+            <td>100m away</td>
+            <td><button type="button" class="btn btn-primary">Invite</button></td>
+          </tr>
 
-    <div class="col-md-3">
-      <img src="images/profile1.jpg" style="height: 180px; width: 180px;" />
+          <tr>
+            <th scope="row"><img src="images/profile2.jpg" style="height: 180px; width: 180px;" /></th>
+            <td>Joe Burgess</td>
+            <td>300m away</td>
+            <td><button type="button" class="btn btn-primary">Invite</button></td>
+          </tr>
+
+          <tr>
+            <th scope="row"><img src="images/profile3.jpg" style="height: 180px; width: 180px;" /></th>
+            <td>Kristine Eicher</td>
+            <td>500m away</td>
+            <td><button type="button" class="btn btn-primary">Invite</button></td>
+          </tr>
+
+          <tr>
+            <th scope="row"><img src="images/profile4.png" style="height: 180px; width: 180px;" /></th>
+            <td>Sam Smith</td>
+            <td>1km</td>
+            <td><button type="button" class="btn btn-primary">Invite</button></td>
+          </tr>
+
+          <tr>
+            <th scope="row"><img src="images/profile5.jpg" style="height: 180px; width: 180px;" /></th>
+            <td>Josef Micklav</td>
+            <td>1.3km</td>
+            <td><button type="button" class="btn btn-primary">Invite</button></td>
+          </tr>
+
+          <tr>
+            <th scope="row"><img src="images/profile6.jpeg" style="height: 180px; width: 180px;" /></th>
+            <td>Nick Farnsworth</td>
+            <td>2km</td>
+            <td><button type="button" class="btn btn-primary">Invite</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+
     </div>
-    <div class="col-md-2" style="margin-top: 30px;">
-      Justin Timberlake
-      <div class="form-group has-success" style="padding-top: 30px;">
-        <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" >
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Invite</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <img src="images/profile2.jpg" style="height: 180px; width: 180px;" />
-    </div>
-    <div class="col-md-2" style="margin-top: 30px;">
-      Joe Burgess
-      <div class="form-group has-success" style="padding-top: 30px;">
-        <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" >
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Invite</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-md-1"></div>
-
-  </div>
-
-  <div class="row" style="margin-top: 20px; margin-left: 20px;">
-    <div class="col-md-1"></div>
-
-    <div class="col-md-3">
-      <img src="images/profile3.jpg" style="height: 180px; width: 180px;" />
-    </div>
-    <div class="col-md-2" style="margin-top: 30px;">
-      Kristine Eicher
-      <div class="form-group has-success" style="padding-top: 30px;">
-        <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" >
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Invite</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <img src="images/profile4.png" style="height: 180px; width: 180px;" />
-    </div>
-    <div class="col-md-2" style="margin-top: 30px;">
-      Sam Smith
-      <div class="form-group has-success" style="padding-top: 30px;">
-        <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" >
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Invite</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-md-1"></div>
-
-  </div>
-
-
-  <div class="row" style="margin-top: 20px; margin-left: 20px;">
-    <div class="col-md-1"></div>
-
-    <div class="col-md-3">
-      <img src="images/profile5.jpg" style="height: 180px; width: 180px;" />
-    </div>
-    <div class="col-md-2" style="margin-top: 30px;">
-      Josef Micklav
-      <div class="form-group has-success" style="padding-top: 30px;">
-        <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" >
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Invite</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <img src="images/profile6.jpeg" style="height: 180px; width: 180px;" />
-    </div>
-    <div class="col-md-2" style="margin-top: 30px;">
-      Nicholas Farnsworth
-      <div class="form-group has-success" style="padding-top: 30px;">
-        <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" >
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Invite</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-md-1"></div>
+    <div class="col-md-2"></div>
 
   </div>
 
