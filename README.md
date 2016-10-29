@@ -1,5 +1,11 @@
 # DJMZ
 
+##Promotional Video:
+https://www.youtube.com/watch?v=A0BBFcOZL5E
+
+##Mobile Web Prototype:
+http://simplifyweb.github.io/djmz
+
 ## Introduction:
 **DJMZ** will be creating a mobile compatible web application to deliver local news within a user’s vicinity using a visual map. It will covering both formal and informal news. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events. 
 
@@ -9,12 +15,6 @@ The application will allow users to share pictures, videos, and any other conten
  The main **target audience** will be for young people (30 years of age and below) who have grown accustomed to smartphone and GPS technology.
  
  The uniqueness of the application is that it is a fusion between user-submitted content and geographically tagged news content. It is a platform where user can do both upload and read the news content at the same time.
- 
-##Mobile Web Prototype:
-http://simplifyweb.github.io/djmz
- 
-##Promotional Video:
-
 
 ## Team:
 | Names             | Student Number |        Roles                                               |
