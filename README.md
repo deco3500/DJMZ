@@ -22,7 +22,7 @@ Users can manage their profile.
 Users can invite their friends to events.
 Users can accept or deny the invitations.
  
- The main **target audience** will be for young people (18-25 years of age) who have grown accustomed to smartphone and GPS technology, and also like to nightouts with their friends.
+ The main **target audience** will be for young people (18-25 years of age) who have grown accustomed to smartphone and GPS technology, and also like to do nightouts with their friends.
  
  The uniqueness of the application is that, it is a fusion between user-submitted events and geographically tagged events. Moreover, it allows users to invite their friends for specific events and also allows them to search events based on time.
 
