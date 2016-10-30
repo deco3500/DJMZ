@@ -171,6 +171,7 @@ function placeMarkers(lat, lng) {
   let customMarker2 = new google.maps.LatLng(lat + 0.00010, lng - 0.0010)
   let customMarker3 = new google.maps.LatLng(lat + 0.00028, lng + 0.0019)
   let customMarker4 = new google.maps.LatLng(lat - 0.00019, lng - 0.0010)
+  let customMarker5 = new google.maps.LatLng(lat - 0.00015, lng + 0.0030)
 
   let marker1 = new google.maps.Marker({
     position: customMarker1,
@@ -228,11 +229,26 @@ function placeMarkers(lat, lng) {
     }
   })
 
+  let marker5 = new google.maps.Marker({
+    position: customMarker5,
+    title: "Happy Hour",
+    animation: google.maps.Animation.DROP,
+    icon: "images/happy-hour.png",
+    map: map,
+    venueInfo: {
+      venueName: "Mick O'Malley's Irish Pub",
+      venueImage: "images/places/mick-omalleys.jpg",
+      venueDescription: "Happy Hour from 3 - 4pm! Everything so cheap!",
+      venueLocation: "171-209 Queen St, Brisbane City QLD 4000"
+    }
+  })
+
   //Click listeners for the markers
   marker1.addListener('click', showEventPost)
   marker2.addListener('click', showEventPost)
   marker3.addListener('click', showEventPost)
   marker4.addListener('click', showEventPost)
+  marker5.addListener('click', showEventPost)
 }
 
 /****************************************************
