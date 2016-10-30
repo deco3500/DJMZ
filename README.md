@@ -83,6 +83,8 @@ There will be a number of resources that are being used to implement the applica
 ### Journalism/News
 ##### #local_news #resident
 
-## Process:
+# Documentation:
 
-https://github.com/deco3500/DJMZ/wiki/0-The-Development-Process
+The development process for this project are documented on the wiki section of this repository:
+https://github.com/deco3500/DJMZ/wiki
+
