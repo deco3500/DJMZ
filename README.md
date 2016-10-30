@@ -13,14 +13,14 @@ http://simplifyweb.github.io/djmz
 Most people that like to go out at night with their friends would appreciate an easy way to obtain information about their friend’s proximity, events happening in nearby pubs/clubs/bars, drink price discounts (happy hour) and most importantly efficiently organizing group gatherings. Moreover, most local AND national news channels only focus on giving out information on major and popular businesses events instead of those happening within the vicinity of the consumers. They also lack in fulfilling social aspects like organizing group gatherings that is more important for people who like to do party with their friends.
 
 **Night Pidgeon** offers certain functionalities to address above mentioned news dilemma.
-Allow users to see events happening around them using their phone’s GPS (by clicking tags on visual map)
-User can see different events like good music, cheaper, expensive, crowded, uncrowded by different tags on the map
-User can search events happening around them within user’s set time (e.g 5 mins, 10 mins)
-Users can post events with different categories
-Users are able to get badge counts based on their posts
-Users can manage their profile
-Users can invite their friends to events
-Users can accept or deny the invitations
+Allow users to see events happening around them using their phone’s GPS (by clicking tags on visual map).
+User can see different events like good music, cheaper, expensive, crowded, uncrowded by different tags on the map.
+User can search events happening around them within user’s set time (e.g 5 mins, 10 mins).
+Users can post events with different categories.
+Users are able to get badge counts based on their posts.
+Users can manage their profile.
+Users can invite their friends to events.
+Users can accept or deny the invitations.
  
  The main **target audience** will be for young people (18-25 years of age) who have grown accustomed to smartphone and GPS technology.
  
