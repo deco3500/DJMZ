@@ -7,10 +7,9 @@ https://www.youtube.com/watch?v=A0BBFcOZL5E
 http://simplifyweb.github.io/djmz
 
 ## Introduction:
-**DJMZ** created a mobile compatible web application (Night Pidgeon) which focuses on providing information of events happening in pubs/clubs/bars within the user’s vicinity. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events happening nearby pubs/clubs/bars. 
-
-## Concept:
 Most people that like to go out at night with their friends would appreciate an easy way to obtain information about their friend’s proximity, events happening in nearby pubs/clubs/bars, drink price discounts (happy hour) and most importantly efficiently organizing group gatherings. Moreover, most local AND national news channels only focus on giving out information on major and popular businesses events instead of those happening within the vicinity of the consumers. They also lack in fulfilling social aspects like organizing group gatherings that is more important for people who like to do party with their friends.
+
+**DJMZ** has created a mobile compatible web application (Night Pigeon) which focuses on providing information of events happening in pubs/clubs/bars within the user’s vicinity. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events happening nearby pubs/clubs/bars. 
 
 **Night Pigeon** offers certain functionalities to address above mentioned news dilemma.
 It allow users to see events happening around them using their phone’s GPS (by clicking tags on visual map).
@@ -22,9 +21,19 @@ Users can manage their profile.
 Users can invite their friends to events.
 Users can accept or deny the invitations.
  
- The main **target audience** will be for young people (18-25 years of age) who have grown accustomed to smartphone and GPS technology, and also like to do nightouts with their friends.
+The main **target audience** will be for young people (18+ years of age) who have grown accustomed to smartphone and GPS technology, and also like to do nightouts with their friends.
  
- The uniqueness of the application is that, it is a fusion between user-submitted events and geographically tagged events. Moreover, it allows users to invite their friends for specific events and also allows them to search events based on time.
+The uniqueness of the application is that, it is a fusion between user-submitted events and geographically tagged events. Moreover, it allows users to invite their friends for specific events and also allows them to search events based on time.
+
+## The Development Process:
+
+The development process for this project, as well as our original solution, is documented on the wiki section of this repository:
+https://github.com/deco3500/DJMZ/wiki
+
+## The Design Research:
+
+Our research findings can be found [here](https://github.com/deco3500/DJMZ/wiki/6-Research) and our survey for the primary data can be found [here](https://github.com/deco3500/DJMZ/wiki/7--Survey-Results).
+
 
 ## Team:
 | Names             | Student Number |        Roles                                               |
@@ -82,9 +91,4 @@ There will be a number of resources that are being used to implement the applica
 
 ### Journalism/News
 ##### #local_news #resident
-
-# The Development Process:
-
-The development process for this project are documented on the wiki section of this repository:
-https://github.com/deco3500/DJMZ/wiki
 
