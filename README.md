@@ -51,7 +51,7 @@ https://github.com/deco3500/DJMZ/wiki
 
 ## The Design Research:
 
-Our research findings can be found [here](https://github.com/deco3500/DJMZ/wiki/6-Research) and our survey for the primary data can be found [here](https://github.com/deco3500/DJMZ/wiki/7--Survey-Results).
+Our research findings can be found [here](https://github.com/deco3500/DJMZ/wiki/6-Research-Findings) and our survey for the primary data can be found [here](https://github.com/deco3500/DJMZ/wiki/7--Survey-Results).
 
 ## Team:
 | Names             | Student Number |        Roles                                               |
