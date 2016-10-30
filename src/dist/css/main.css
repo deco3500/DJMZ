@@ -306,6 +306,17 @@ footer .footer-item .popup-event .popup-content .event-time-limit label input {
   margin: 10px;
 }
 
+#event-info .event-info-contents .event-info-description p strong {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#event-info .event-info-contents .event-info-description p .event-drink-price {
+  font-weight: lighter;
+  font-size: 1.05em;
+  color: #666666;
+}
+
 #event-info .event-info-contents .event-info-interactions .button-group {
   margin-top: 20px;
 }

@@ -183,7 +183,8 @@ function placeMarkers(lat, lng) {
       venueName: "Bacchus Bar Restaurant And Pool",
       venueImage: "images/places/bacchus.JPG",
       venueDescription: "This place is so cheap!! Buy one and get one free SPIRIT!",
-      venueLocation: "Podium Level, Rydges South Bank, Grey & Glenelg Sts., South Brisbane QLD 4101"
+      venueLocation: "Podium Level, Rydges South Bank, Grey & Glenelg Sts., South Brisbane QLD 4101",
+      drinkPrice: "Am4zing"
     }
   })
 
@@ -211,7 +212,8 @@ function placeMarkers(lat, lng) {
       venueName: "The Fringe Bar",
       venueImage: "images/places/fringebar.jpg",
       venueDescription: "This place totally rips you off!! Don't pay 15 bucks for a beer!",
-      venueLocation: "Ann St & Constance Street, Fortitude Valley QLD 4006"
+      venueLocation: "Ann St & Constance Street, Fortitude Valley QLD 4006",
+      drinkPrice: "This 15 ridiculous"
     }
   })
 
@@ -239,7 +241,8 @@ function placeMarkers(lat, lng) {
       venueName: "Mick O'Malley's Irish Pub",
       venueImage: "images/places/mick-omalleys.jpg",
       venueDescription: "Happy Hour from 3 - 4pm! Everything so cheap!",
-      venueLocation: "171-209 Queen St, Brisbane City QLD 4000"
+      venueLocation: "171-209 Queen St, Brisbane City QLD 4000",
+      drinkPrice: "ch3ap"
     }
   })
 
@@ -257,10 +260,17 @@ function placeMarkers(lat, lng) {
 
 //when the marker is clicked, show the event info
 function showEventPost() {
-  let { venueName, venueImage, venueDescription, venueLocation } = this.venueInfo
+  let { venueName, venueImage, venueDescription, venueLocation, drinkPrice } = this.venueInfo
+
   $('.event-name').text(venueName)
   $('.event-photo').attr('src', venueImage)
   $('.event-description').text(venueDescription)
+
+  if (drinkPrice !== undefined) {
+    $('.event-drink-price').text(drinkPrice)
+  } else {
+    $('.event-drink-price').text("please send us the price!")
+  }
 
   $('#event-info').css("top", "70px")
 }
