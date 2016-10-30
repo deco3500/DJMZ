@@ -491,10 +491,13 @@ footer .footer-item .popup-event .popup-content .event-time-limit label input {
 
 #main {
   margin-bottom: 70px;
+  min-height: 100vh;
+  position: relative;
 }
 
 #main .row {
   margin-top: 20px;
+  height: 50%;
 }
 
 #main .row .card {
@@ -514,6 +517,38 @@ footer .footer-item .popup-event .popup-content .event-time-limit label input {
 
 #main .row .card div.card-block p.card-content {
   margin-top: 5px;
+}
+
+#main .new-event-button {
+  position: absolute;
+  bottom: 130px;
+  background-color: #0b9131;
+  width: 100vw;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+#main .new-event-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#main .new-event-button h1 {
+  font-size: 1.5em;
+}
+
+#main .new-event-button h1 a {
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
