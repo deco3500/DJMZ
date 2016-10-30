@@ -74,3 +74,5 @@ There will be a number of resources that are being used to implement the applica
 ##### #local_news #resident
 
 ## Process:
+
+https://github.com/deco3500/DJMZ/wiki/Documentation
