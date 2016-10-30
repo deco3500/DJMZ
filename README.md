@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=A0BBFcOZL5E
 http://simplifyweb.github.io/djmz
 
 ## Introduction:
-**DJMZ** created a mobile compatible web application (Night Pidgeon) which focuses on providing information of events happening in pubs/clubs/bars within the user’s vicinity. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events. 
+**DJMZ** created a mobile compatible web application (Night Pidgeon) which focuses on providing information of events happening in pubs/clubs/bars within the user’s vicinity. It aims to address the lack of channel for news that affect people locally. Often times, news are in a global/state level, where consumers do not feel a direct impact to these events happening nearby pubs/clubs/bars. 
 
 ## Concept:
 Most people that like to go out at night with their friends would appreciate an easy way to obtain information about their friend’s proximity, events happening in nearby pubs/clubs/bars, drink price discounts (happy hour) and most importantly efficiently organizing group gatherings. Moreover, most local AND national news channels only focus on giving out information on major and popular businesses events instead of those happening within the vicinity of the consumers. They also lack in fulfilling social aspects like organizing group gatherings that is more important for people who like to party with their friends.
